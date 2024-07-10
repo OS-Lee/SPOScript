@@ -7,8 +7,8 @@ Step 1:
 Register an Azure application follow the demo [here](https://github.com/pnp/PnP-PowerShell/tree/master/Samples/SharePoint.ConnectUsingAppPermissions)
 
 ```
-#STEP2 Export the site collection needs to be checked->SharePoint admin user credential
-#Admin centerURL
+**#STEP2** Export the site collection needs to be checked->SharePoint admin user credential
+#Admin centerURL and siteURL list report
 $filepath="C:\temp\AllSites.csv"
 $AdminPortalUrl="https://m365x17384749-admin.sharepoint.com/"
 
@@ -21,7 +21,7 @@ $AllSites = Get-PnPTenantSite | Where -Property Template -NotIn ("SRCHCEN#0", "R
 $AllSites | Select Url,Template,LocaleId| Export-Csv -Path $filepath -NoTypeInformation
 
 
-#STEP3 Iterate the site collection needs to be checked->App Only credential
+**#STEP3** Iterate the site collection needs to be checked->App Only credential
 $Allsites = Import-Csv $filepath 
 
 $ResultSiteList = @()
