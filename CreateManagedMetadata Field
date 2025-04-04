@@ -1,0 +1,6 @@
+Graph api doesn't support create Managed metadata column for SharePoint list currently.
+
+
+There are scenarios that we need to iternate SPO site collections for specific purpose. And we need a super admin account to iterate all SPO site collections. To bypass the limitation, the sample script will use App only permission to iterate all SPO site collections rather than granting a super admin accout to all SPO site collections. A revised version for Find All sites where "Everyone except external users" is Added
+
+Step 1: Register an Azure application follow the demo here
