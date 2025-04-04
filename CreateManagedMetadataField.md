@@ -6,6 +6,8 @@ https://learn.microsoft.com/en-us/graph/api/resources/columndefinition?view=grap
 <img width="741" alt="GraphTermLimit" src="https://github.com/user-attachments/assets/25885d9d-03cf-469f-bfd0-8b8dd92dea18" />
 
 In case there is the scenario which needs to add Managed metadata column in SharePoint, here is the workaround based on my test:
+![image](https://github.com/user-attachments/assets/af5fabc2-8937-4d20-bc3a-1f5d33e43e0e)
+
 To call SharePoint rest api:
 ```
 _api/Web/lists/getbytitle('listTitle')/fields/CreateFieldAsXml
