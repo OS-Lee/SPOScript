@@ -36,7 +36,7 @@ Configure your app with proper <SharePoint/Graph> permissions; upload the certif
 
 ####################step 3##############################
 # Define the Azure AD tenant ID and app client ID
-$tenantId = "841c3b8d-d269-413c-82a8-ad6036fc1742"
+$tenantId = "<your tenant ID>"
 $clientId = "46da910a-aa50-479d-8dbb-689093d03e07"
 
 $cert=Get-ChildItem  -Path $CERT_Store | Where-Object {$_.Subject -Match $CERT_Subject}
